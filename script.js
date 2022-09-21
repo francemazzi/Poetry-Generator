@@ -10,7 +10,7 @@ async function esprimiPoetiFetch() {
   const resultPArray = await result.json();
   let poesia = " ";
   //Ci sarebbe da 'pulire il testo della poesia
-  if (resultPArray[0].lines.length < 50) {
+  if (resultPArray[0].lines.length < 100) {
     const stringPoesia = resultPArray[0].lines.join("\n");
     poesia = `${stringPoesia}  `;
   } else {
